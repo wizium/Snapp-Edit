@@ -28,7 +28,7 @@ git clone https://github.com/ABUBAKARL/image_background_remover.git
 2. Navigate to the project directory:
 
 ```
-cd remove-image-background-app
+cd image_background_remover
 ```
 
 3. Install the dependencies:
