@@ -1,0 +1,92 @@
+{
+  "project_info": {
+    "project_number": "119945979760",
+    "project_id": "image-background-remover-38c76",
+    "storage_bucket": "image-background-remover-38c76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119945979760:android:2a347e8ec6cca51f7a51b5",
+        "android_client_info": {
+          "package_name": "com.example.image_bg_remover"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119945979760-b7ah28j6blmup28m3bqnem9iqrsg9h9m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.image_bg_remover",
+            "certificate_hash": "6249aa3fd397fffdec0c86748ab7ff5d5b2757d9"
+          }
+        },
+        {
+          "client_id": "119945979760-ki5sk8r8i0vr37drllfmos84kj31shun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.image_bg_remover",
+            "certificate_hash": "7db0e900132ac79fd5a5b0e15dbbce2706c076ff"
+          }
+        },
+        {
+          "client_id": "119945979760-t5krr7o5trp9a8j67vdt281nj3klvbo0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.image_bg_remover",
+            "certificate_hash": "da653c782710c91794dbc445c7485e024e743d0a"
+          }
+        },
+        {
+          "client_id": "119945979760-kisl30vjgcdmfa25joj0f15u929p656f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTxxX9sOJBPld62_a7biHSmtddQk60ky4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119945979760-kisl30vjgcdmfa25joj0f15u929p656f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119945979760:android:cb73fe57b495651c7a51b5",
+        "android_client_info": {
+          "package_name": "com.wizium.snapaway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119945979760-kisl30vjgcdmfa25joj0f15u929p656f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTxxX9sOJBPld62_a7biHSmtddQk60ky4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119945979760-kisl30vjgcdmfa25joj0f15u929p656f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
