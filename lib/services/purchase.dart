@@ -2,10 +2,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
-import '../Functions/subscriptioncheck.dart';
-import '../Page/signin.dart';
-import '../widget/home_drawer.dart';
+import 'signIn.dart';
+import 'subscriptionCheck.dart';
+import '../screen/login.dart';
 import '/main.dart';
+
 InAppPurchase inAppPurchase = InAppPurchase.instance;
 late PurchaseParam purchaseParam;
 FirebaseFirestore firestore = FirebaseFirestore.instance;
@@ -32,7 +33,7 @@ listenToPurchase(List<PurchaseDetails> purchaseDetails) async {
       }
       await firestore
           .collection("subscription_details")
-          .doc(auth.currentUser!.uid)
+          .doc(firebaseAuth.currentUser!.uid)
           .set(
         {"endDate": endDate},
       );
@@ -64,7 +65,7 @@ initStore(VoidCallback callback) async {
 }
 
 buy({required ProductDetails product}) async {
-  if (auth.currentUser == null) {
+  if (firebaseAuth.currentUser == null) {
     Get.snackbar(
       "Error",
       "Please login first",

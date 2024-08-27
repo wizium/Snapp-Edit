@@ -1,6 +1,7 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:glassmorphism_ui/glassmorphism_ui.dart';
+import '../config.dart';
 import 'package:lottie/lottie.dart';
 
 class LoadingIndicator extends StatefulWidget {
@@ -13,47 +14,35 @@ class LoadingIndicator extends StatefulWidget {
 class _LoadingIndicatorState extends State<LoadingIndicator> {
   @override
   Widget build(BuildContext context) {
-    return OrientationBuilder(builder: (context, orientation) {
-      return Container(
-        decoration: const BoxDecoration(
-          borderRadius: BorderRadius.all(
-            Radius.circular(
-              12,
+    return Lottie.asset(
+      "assets/loadingGradient.json",
+      height: 70,
+      width: 70,
+      repeat: true,
+      fit: BoxFit.contain,
+      frameRate: FrameRate(90),
+      frameBuilder: (context, child, composition) {
+        return ClipRRect(
+          borderRadius: BorderRadius.circular(childBorderRadius),
+          child: Container(
+            height: 100,
+            width: Get.width * .7,
+            decoration: const BoxDecoration(
+              color: Colors.white,
+            ),
+            child: BackdropFilter(
+              filter: ImageFilter.blur(
+                sigmaX: 40,
+                sigmaY: 40,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(3.0),
+                child: child,
+              ),
             ),
           ),
-        ),
-        child: Center(
-          child: GlassContainer(
-            blur: 2,
-            height: orientation == Orientation.portrait
-                ? Get.height * 0.35
-                : Get.height * 0.7,
-            width: orientation == Orientation.portrait
-                ? Get.width * 0.6
-                : Get.width * 0.3,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Lottie.asset(
-                  "assets/Animation - 1701860113537.json",
-                  height: 200,
-                  repeat: true,
-                  frameRate: FrameRate(90),
-                ),
-                Text(
-                  "Processing...",
-                  style: Theme.of(context).textTheme.headlineSmall!.merge(
-                        const TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                ),
-              ],
-            ),
-          ),
-        ),
-      );
-    });
+        );
+      },
+    );
   }
 }

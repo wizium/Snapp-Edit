@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:image_bg_remover/main.dart';
+import '../main.dart';
 import 'package:unity_ads_plugin/unity_ads_plugin.dart';
 
 class AdServices {

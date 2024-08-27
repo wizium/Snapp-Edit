@@ -1,5 +1,5 @@
 import 'package:get/state_manager.dart';
-import 'package:image_bg_remover/main.dart';
+import '../main.dart';
 
 class StateController extends GetxController {
   RxInt? isEdited = 0.obs;
