@@ -51,13 +51,13 @@ android {
 
     signingConfigs {
         release {
-            storeFile = file('D:/releaseSign.keystore')
+            storeFile = file('releaseSign.keystore')
             storePassword = 'Abu@512bakar'
             keyAlias = 'Abubakar'
             keyPassword = 'Abu@512bakar'
         }
         debug {
-            storeFile = file('D:/releaseSign.keystore')
+            storeFile = file('releaseSign.keystore')
             storePassword = 'Abu@512bakar'
             keyAlias = 'Abubakar'
             keyPassword = 'Abu@512bakar'

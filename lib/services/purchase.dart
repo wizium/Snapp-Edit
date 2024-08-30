@@ -2,10 +2,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
-import 'signIn.dart';
-import 'subscriptionCheck.dart';
 import '../screen/login.dart';
 import '/main.dart';
+import 'signin.dart';
+import 'subscriptioncheck.dart';
 
 InAppPurchase inAppPurchase = InAppPurchase.instance;
 late PurchaseParam purchaseParam;

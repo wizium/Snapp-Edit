@@ -9,7 +9,7 @@ import '../firebase_options.dart';
 import 'services/purchase.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'state/state_control.dart';
+import 'State/state_control.dart';
 
 StateController stateController = Get.put(StateController());
 List<ProductDetails> products = [];
